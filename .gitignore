@@ -1,0 +1,45 @@
+# ───────── Python / Backend ─────────
+# Virtual environment (besar, bisa dibuat ulang dari requirements.txt)
+venv/
+backend/venv/
+env/
+.venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ───────── File rahasia ─────────
+# .env berisi password database & kunci JWT — JANGAN diunggah.
+# Yang diunggah cukup .env.example sebagai contoh.
+.env
+backend/.env
+*.env
+!.env.example
+!backend/.env.example
+
+# ───────── Database lokal ─────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ───────── File hasil upload pengguna ─────────
+# Hapus baris di bawah ini jika ingin folder uploads ikut diunggah.
+uploads/*
+!uploads/.gitkeep
+
+# ───────── Sistem operasi ─────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ───────── Editor / IDE ─────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ───────── Log ─────────
+*.log
